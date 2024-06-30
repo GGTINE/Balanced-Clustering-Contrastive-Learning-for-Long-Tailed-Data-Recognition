@@ -17,7 +17,7 @@ Real-world deep learning training data often follow a long-tailed (LT) distribut
  |BCCL| 50 | 200 | ResNet-32   | 88.14 | [download](https://drive.google.com/file/d/1C54hoCFPCok4wOuLddlX9z1rftrFWH4-/view?usp=drive_link)|
  |BCCL| 10 | 200 | ResNet-32   | 91.92 | [download](https://drive.google.com/file/d/1oIqt0l08wbyW88XU-d4U6Fv1JV00OWty/view?usp=drive_link) |
 
- ### Cifar-100-LT
+### Cifar-100-LT
  | Method | imbalance factor |Epochs| Model | Top-1 Acc(%) | link | 
  | :---: | :---: |:---: | :---: | :---: | :---: | 
  |BCCL| 100  | 200 | ResNet-32   | 52.55 | [download](https://drive.google.com/file/d/1RN1WSWbRFxA_u5kppWvIKvBd5SJJMm3U/view?usp=drive_link) | 
@@ -67,7 +67,7 @@ python main.py --dataset imagenet \
 ### For ImageNet-LT & iNaturalist
 You should download [ImageNet-LT](http://image-net.org/download) dataset manually, place them in your `data_root`
 
-Long-tailed version will be created using train/val splits (.txt files)
+### Long-tailed version will be created using train/val splits (.txt files)
 
 ImageNet-LT download [ImageNet-LT](https://drive.google.com/file/d/1wRxlzWtgyYDIL1Az6dzNqUNGbmT1SKVA/view?usp=drive_link) 
 
