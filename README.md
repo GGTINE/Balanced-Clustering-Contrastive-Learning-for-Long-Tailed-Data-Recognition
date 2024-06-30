@@ -64,7 +64,7 @@ python main.py --dataset imagenet \
 ```
 
 
-### For ImageNet-LT & iNaturalist
+### For ImageNet-LT & iNaturalist 2018
 You should download [ImageNet-LT](http://image-net.org/download) dataset manually, place them in your `data_root`
 
 ### Long-tailed version will be created using train/val splits (.txt files)
