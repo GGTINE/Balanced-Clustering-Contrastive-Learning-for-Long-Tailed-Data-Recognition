@@ -10,12 +10,16 @@ Real-world deep learning training data often follow a long-tailed (LT) distribut
 
 ## Results and Pretrained Models
 
-### Cifar-10-LT & Cifar-100-LT
+### Cifar-10-LT
  | Method | imbalance factor |Epochs| Model | Top-1 Acc(%) | link | 
  | :---: | :---: |:---: | :---: | :---: | :---: | 
  |BCCL| 100  | 200 | ResNet-32   | 85.22 | [download](https://drive.google.com/file/d/1-0C62I1OY12hD-ici96I-hfc2k_VHS9J/view?usp=drive_link) | 
  |BCCL| 50 | 200 | ResNet-32   | 88.14 | [download](https://drive.google.com/file/d/1C54hoCFPCok4wOuLddlX9z1rftrFWH4-/view?usp=drive_link)|
  |BCCL| 10 | 200 | ResNet-32   | 91.92 | [download](https://drive.google.com/file/d/1oIqt0l08wbyW88XU-d4U6Fv1JV00OWty/view?usp=drive_link) |
+
+ ### Cifar-100-LT
+ | Method | imbalance factor |Epochs| Model | Top-1 Acc(%) | link | 
+ | :---: | :---: |:---: | :---: | :---: | :---: | 
  |BCCL| 100  | 200 | ResNet-32   | 52.55 | [download](https://drive.google.com/file/d/1RN1WSWbRFxA_u5kppWvIKvBd5SJJMm3U/view?usp=drive_link) | 
  |BCCL| 50 | 200 | ResNet-32   | 56.89 | [download](https://drive.google.com/file/d/1fnM4AySDP8CQw-zcfMTGnKP-THgv3eRB/view?usp=drive_link)|
  |BCCL| 10 | 200 | ResNet-32   | 65.3 | [download](https://drive.google.com/file/d/1B6f7zRPL8k52BzfbsMUvRxjoB17kJhzv/view?usp=drive_link) |
@@ -58,3 +62,6 @@ python main.py --dataset imagenet \
   --wd 5e-4 --cos True \
   -b 128 --feat_dim 2048 --tb_save
 ```
+
+
+### For ImageNet-LT & iNaturalist
