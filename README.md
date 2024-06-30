@@ -26,10 +26,10 @@ Real-world deep learning training data often follow a long-tailed (LT) distribut
 
 
 ## Usage
-For Cifar-10-LT and Cifar-100-LT training and evaluation. All experiments are conducted on 1 GPUs.
+For Cifar-10-LT and Cifar-100-LT training and evaluation. All experiments are conducted on 1 GPU.
 
 ### Cifar-10-LT
-To do supervised training with BCCL for 200 epochs on Cifar-10-LT with 1 gpus, run
+To do supervised training with BCCL for 200 epochs on Cifar-10-LT with 1 GPU, run
 ```
 python main.py --dataset cifar10 \
   --arch resnet32 --epochs 200 --temp 0.1 \
@@ -44,7 +44,7 @@ python test.py --path $PATH
 ```
 
 ### Cifar-100-LT
-To do supervised training with BCCL for 200 epochs on Cifar-100-LT with 1 gpus, run
+To do supervised training with BCCL for 200 epochs on Cifar-100-LT with 1 GPU, run
 ```
 python main.py --dataset cifar100 \
   --arch resnet32 --epochs 200 --temp 0.1 \
@@ -54,7 +54,7 @@ python main.py --dataset cifar100 \
 ```
 
 ### ImageNet-LT
-To do supervised training with BCCL for 100 epochs on ImageNet-LT with 1 gpus, run
+To do supervised training with BCCL for 100 epochs on ImageNet-LT with 1 GPU, run
 ```
 python main.py --dataset imagenet \
   --arch resnet50 --epochs 100 --temp 0.07 \
@@ -65,3 +65,7 @@ python main.py --dataset imagenet \
 
 
 ### For ImageNet-LT & iNaturalist
+You should download [ImageNet-LT](http://image-net.org/download) dataset manually, place them in your `data_root`
+Long-tailed version will be created using train/val splits (.txt files)
+ImageNet-LT download [ImageNet-LT](https://drive.google.com/file/d/1wRxlzWtgyYDIL1Az6dzNqUNGbmT1SKVA/view?usp=drive_link) 
+iNaturalist 2018 download [iNaturalist 2018](https://drive.google.com/file/d/1j5T4RFd03-2vjbVta5EpCIKZZsW6K_hn/view?usp=drive_link) 
